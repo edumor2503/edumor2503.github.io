@@ -14,8 +14,6 @@ body {
 }
 .navbar-fijo {
   position: fixed;
-  top: 0;
-  width: 200%;
   background-color: rgb(218, 192, 163, 0.7) !important;
  
 }
