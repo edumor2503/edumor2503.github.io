@@ -25,9 +25,13 @@
   text-shadow: 2px 2px 4px #000000; 
 }
 
+
 .navbar-fijo {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   background-color: rgb(218, 192, 163, 0.7) !important;
+  width: 100%;
 
 }
 
@@ -37,11 +41,28 @@
   text-shadow: 2px 2px 4px #000000; 
 }
 
+
+.nav-link[href="#contacto"] {
+  margin-right: 20px; 
+}
+
+.nav-link[href="#login"] {
+  margin-left: 5px; 
+
+}
 .jf_navbar {
   background-color: rgb(218, 192, 163, 0.7) !important;
 }
 .jf_navbar_div , .jf_nabar_ul {
   background-color: transparent !important;
+}
+
+.user-icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 0;
+  margin-right: 5px;
+  
 }
 
 .jf_section_1 {
