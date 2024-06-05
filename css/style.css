@@ -60,6 +60,11 @@
   margin: auto; 
 }
 
+#registro label, 
+#registro input {
+  width: 100%;
+}
+
 label {
   margin-bottom: 0,1px; 
 }
