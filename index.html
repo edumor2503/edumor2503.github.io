@@ -75,8 +75,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link"  href="#contacto">Contacto</a>
             </li>
+            	<li class="nav-item">
+            <a class="nav-link" href="#login">
+              <i class="fas fa-user-plus user-icon"></i> 
+            </a>
+			  	</li>
           </ul>
         </div>
       </div>
@@ -366,7 +371,7 @@
                                   
                   <textarea name="mensaje" placeholder="Escriba aquí su mensaje (*)" required></textarea>
                   <p></p>
-                  <input type="submit" value="Enviar" id="boton">
+                  <input class= "enviar"type="submit" value="Enviar" id="boton">
                     
                     <br>
                     <br>
@@ -438,6 +443,39 @@
   </footer>
 </section>
 
+
+<section id="login">
+   <form action="/submit_login" method="post">
+      <h4>Iniciar sesión</h4>
+      <label for="email"><strong>Email</strong>:</label><br>
+      <input type="email" id="email" name="email"required><br>
+      <label for="pwd"><strong>Contraseña:</strong></label><br>
+      <input type="password" id="pass" name="pass"required><br>
+      <input class="inicio" type="submit" value="Iniciar sesión">
+  </form> 
+   <p class="center-text"><strong>No tienes una cuenta?</strong>&nbsp;<a href="#registro"><strong>Regístrate</strong></a></p>
+</section>
+
+
+<section id="registro">
+    <form action="/submit_registration" method="post">
+      <h4>Registro</h4>
+      <label for="fname"><strong>Nombre y Apellido: (*)</strong></label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="lname"><strong>Empresa:</strong></label><br>
+      <input type="text" id="empresa" name="empresa"><br>
+      <label for="lname"><strong>Cargo:</strong></label><br>
+      <input type="text" id="cargo" name="cargo"><br>
+      <label for="email"><strong>Email: (*)</strong></label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="pwd"><strong>Contraseña: (*)</strong></label><br>
+      <input type="password" id="pass" name="pass" required><br>
+      <label for="pwd"><strong>Repetir Contraseña: (*)</strong></label><br>
+      <input type="password" id="pass2" name="pass2" required><br>
+      <input class="inicio" type="submit" value="Registrarse">
+      <p><strong>(*) Campos obligatorios</strong></p>
+  </form> 
+</section>
 <!-- Scripts -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
