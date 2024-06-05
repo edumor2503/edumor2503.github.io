@@ -371,7 +371,7 @@
                                   
                   <textarea name="mensaje" placeholder="Escriba aquí su mensaje (*)" required></textarea>
                   <p></p>
-                  <input class= "enviar"type="submit" value="Enviar" id="boton">
+                  <input class= "enviar" type="submit" value="Enviar" id="boton">
                     
                     <br>
                     <br>
@@ -448,9 +448,9 @@
    <form action="/submit_login" method="post">
       <h4>Iniciar sesión</h4>
       <label for="email"><strong>Email</strong>:</label><br>
-      <input type="email" id="email" name="email"required><br>
-      <label for="pwd"><strong>Contraseña:</strong></label><br>
-      <input type="password" id="pass" name="pass"required><br>
+      <input type="email" id="email-login" name="email" required>
+      <label for="passw"><strong>Contraseña:</strong></label><br>
+      <input type="password" id="password" name="pass" required><br>
       <input class="inicio" type="submit" value="Iniciar sesión">
   </form> 
    <p class="center-text"><strong>No tienes una cuenta?</strong>&nbsp;<a href="#registro"><strong>Regístrate</strong></a></p>
@@ -458,19 +458,19 @@
 
 
 <section id="registro">
-    <form action="/submit_registration" method="post">
+  <form action="/submit_registration" method="post">
       <h4>Registro</h4>
-      <label for="fname"><strong>Nombre y Apellido: (*)</strong></label><br>
+      <label for="nombre"><strong>Nombre y Apellido: (*)</strong></label><br>
       <input type="text" id="nombre" name="nombre" required><br>
-      <label for="lname"><strong>Empresa:</strong></label><br>
+      <label for="empresa"><strong>Empresa:</strong></label><br>
       <input type="text" id="empresa" name="empresa"><br>
-      <label for="lname"><strong>Cargo:</strong></label><br>
+      <label for="cargo"><strong>Cargo:</strong></label><br>
       <input type="text" id="cargo" name="cargo"><br>
-      <label for="email"><strong>Email: (*)</strong></label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="pwd"><strong>Contraseña: (*)</strong></label><br>
-      <input type="password" id="pass" name="pass" required><br>
-      <label for="pwd"><strong>Repetir Contraseña: (*)</strong></label><br>
+      <label for="email-registro"><strong>Email: (*)</strong></label><br>
+      <input type="email" id="email-registro" name="email" required><br>
+      <label for="password-registro"><strong>Contraseña: (*)</strong></label><br>
+      <input type="password" id="password-registro" name="pass" required><br>
+      <label for="pass2"><strong>Repetir Contraseña: (*)</strong></label><br>
       <input type="password" id="pass2" name="pass2" required><br>
       <input class="inicio" type="submit" value="Registrarse">
       <p><strong>(*) Campos obligatorios</strong></p>
