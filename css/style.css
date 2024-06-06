@@ -35,6 +35,12 @@
   margin: auto; 
 }
 
+label, input {
+  margin: 0;
+  padding: 0;
+}
+
+
 .inicio {
   background-color: #102C57;
   color: white;
@@ -47,16 +53,16 @@
 
 
 #registro {
-  display: flex;
-  flex-direction: column;
+  display: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 130vh;
 }
 
 
 #registro form {
-  width:700px; 
+  margin-left: 5px; 
+  width:500px; 
   margin: auto; 
 }
 
@@ -325,3 +331,11 @@ label {
   font-size: 1.5em;
   text-align: center
 }
+
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh; 
+}
+
