@@ -141,21 +141,124 @@ height: 250px;
 border-radius: 10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 transition: transform 0.3s ease;
-
 }
+
 #galeria img:hover {
 border: 5px solid white;
 }
 
 .logo {
-  width: 100%;
-  max-width: 250px; /* Ajusta este valor al tamaño que desees */
+  max-width: 100%;
+  height: auto;
   margin: auto;
   display: block;
-  padding: 5px; /* Ajusta este valor para cambiar el espacio entre logos */
-  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
+
+.row-fila {
+  margin-bottom: 10px; 
+  
+}
+
+
+.flip-container {
+  perspective: 1000px;
+
+}
+.flipper {
+  transition: 2.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  display: block;
+}
+
+
+.services-list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+ 
+}
+
+.back {
+  transform: rotateY(180deg);
+ 
+}
+
+
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+ 
+.flip-container ul {
+  width: 100%; 
+  list-style: none; 
+  padding: 0; 
+ 
+}
+
+.flip-container li {
+  text-align: left; 
+}
+
+.flip-container .back ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: auto;
+}
+
+.flip-container .back ul li {
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+.flip-container.hover .flipper {
+  transform: rotateY(180deg); 
+}
+
+.front, .back {
+  backface-visibility: hidden; 
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  position: absolute;
+}
+
+.back {
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: rotateY(180deg); 
+  height: 100%; 
+  width: 100%; 
+}
+
+.back ul, .back li {
+  list-style: none; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content:left;
+  align-items: left; 
+  width: 100%; 
+  height: 100%; 
+  padding: 5px;
+  margin: 10px;
+}
 
 #marketing , #moviles ,#serv {
 margin-bottom: 50px; 
@@ -236,6 +339,8 @@ padding: 20px 0;
 width: 100%;
 margin-bottom: 100px;
 }
+
+
 .logo {
 margin-top: 0;
 width: 50px;  
