@@ -173,7 +173,7 @@ border: 5px solid white;
 
 }
 .flipper {
-  transition: 2.6s;
+  transition: 4.6s;
   transform-style: preserve-3d;
   position: relative;
   display: block;
