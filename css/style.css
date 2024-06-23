@@ -633,7 +633,7 @@ position: absolute;
 }
 
 .linea-footer {
-  border-top: 1px solid white; 
+  border-top: 3px solid white; 
   width: 100%; 
   padding-top: 10px;
   font-weight: bold;
@@ -641,3 +641,9 @@ position: absolute;
  
 }
 
+.icon {
+  text-align: center;
+  margin-right: 20px; /* Ajusta el valor de 20px según necesites */
+  font-size: 24px;
+  color: white;
+}
